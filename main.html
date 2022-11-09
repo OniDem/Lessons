@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <link rel="stylesheet"  href="style.css"/>
+  <script src="style.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="toggler">
+<!--Стрелка влево при помощи CSS, ширина фиксирована-->
+    </div>
+    <div align="center" class="content">
+    .....Текстцук.....
+    </div>
+  </div>
+  <style>
+    html {
+      font-size: 14px;
+    }
+  li {
+    font-size: 0.8rem;
+  }
+</style>
+
+<div>
+  <button id="up">Кликните, чтобы увеличить текст</button>
+  <button id="down">Кликните, чтобы уменьшить текст</button>
+</div>
+
+<img scr="https://js.cx/clipart/angry_dog.png">
+
+  <ul>
+    <li>Собака
+      <ul>
+        <li>Бывает
+          <ul>
+            <li>кусачей
+              <ul>
+                <li>только
+                  <lul>
+                    <li>от жизни
+                      <ul>
+                        <li>собачей</li>
+                      </ul>
+                    </li>
+                  </lul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <script>
+    let html = document.documentElement;
+up.onclick = function() {
+  html.style.fontSize = parseInt(getComputedStyle(html,'').fontSize) + 2 + 'px';
+};
+down.onclick = function() {
+  html.style.fontSize = parseInt(getComputedStyle(html,'').fontSize) - 2 + 'px';
+};
+  </script>
+  </body>
+</html>
