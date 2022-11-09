@@ -20,3 +20,22 @@ function GetPercentage(){
   let s = ((parseFloat(p) * parseFloat(i) * parseFloat(t)) / 365) / 100;
   alert('Your percentage from the deposit is ' + s);
 }
+
+function GetBuySumm(){
+  let cn = prompt('Enter count of notebooks ', '');
+  let pn = prompt('Enter price of one notebook ', '');
+  let cp = prompt('Enter count of pencils ', '');
+  let pc = prompt('Enter price of one pencil ', '');
+  let sum = (parseFloat(cn)*parseFloat(pn))+(parseFloat(cp)*parseFloat(pc));
+  alert('The purchase amount is equal to ' + sum);
+}
+/* Не доделано :)
+function GetTripPrice(){
+  let r = prompt('Enter range ','');
+  let r100 = prompt('Enter cost on 100 km', '');
+  let p = prompt('Enter price', '');
+  let tp = (parseInt(r) * (parseInt(r100) / 100) * parseInt(p)) * 2;
+  alert('The price of the car trip is ' + tp);
+}
+GetTripPrice();
+*/
